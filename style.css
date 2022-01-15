@@ -1,3 +1,83 @@
 body {
   font-family: "Roboto Mono", monospace;
 }
+
+/* Heading part */
+
+.top-header {
+  display: flex;
+  justify-content: space-around;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+}
+nav li {
+  list-style: none;
+  margin-right: 2em;
+  font-size: 20px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+/* first portion styles */
+.first-part {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+.written-part {
+  margin-top: 70px;
+  width: 40%;
+}
+#journey {
+  font-size: 50px;
+}
+#first-button {
+  background-color: #e02c6d;
+  width: 196px;
+  height: 44px;
+  left: 120px;
+  border-radius: 41px;
+  padding: 10px, 24px, 10px, 24px;
+  color: aliceblue;
+  font-size: 18px;
+  border: none;
+}
+button > a {
+  color: aliceblue;
+  text-decoration: none;
+}
+button > a > i {
+  margin-left: 10px;
+  font-size: 25px;
+}
+.camera {
+  background-image: url(images/Circle\ design.svg);
+  background-repeat: no-repeat;
+}
+.camera img {
+  transition: transform 2s;
+}
+.camera img:hover {
+  transform: rotate(360deg);
+}
+
+.media-portion {
+  margin: 100px 300px;
+}
+.logo-section {
+  margin: 30px 0px 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#amazon {
+  width: 80px;
+}
+
+/* Popular Collection Area Styles */
+
+.head {
+  text-align: center;
+}
