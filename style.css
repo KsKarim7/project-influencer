@@ -142,7 +142,7 @@ button > a > i {
 .footer {
   background: rgb(1, 11, 41);
   width: 2115px;
-  height: 220px;
+  max-height: 220px;
   margin-top: 5%;
 }
 .footer-info {
@@ -207,19 +207,33 @@ button > a > i {
     width: 100%;
   }
   .top-header {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: left;
+    display: flex;
+    flex-direction: column;
   }
   .popular-item,
   .bottom-part {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
   }
   .first-part,
   .media-portion,
   .popular-collection,
   .bottom-part {
     flex-direction: column;
+  }
+  .head {
+    text-align: start;
+    padding-left: 10px;
+  }
+  .popular-collection {
+    width: 160px;
+    height: 615px;
+  }
+  .popular-collection > img {
+    width: 20px;
+  }
+  .popular-item {
+    width: 10px;
   }
   .logo-section {
     display: grid;
@@ -235,14 +249,14 @@ button > a > i {
   .camera > img {
     width: 370px;
   }
-  /* .popular-item {
-    margin-left: 0%;
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .bottom-part {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 2fr);
   }
   .bottom-part {
     flex-direction: column;
-  } */
+  }
+  .bottom-info {
+    width: 40%;
+  }
 }
